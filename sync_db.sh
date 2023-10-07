@@ -18,7 +18,7 @@ function _ggrep() {
     fi
 }
 
-db=$(cat json_dbs/gpu_product_db.json)
+db=$(cat json_dbs/nvidia_gpu_product_db.json)
 
 while read -r line
 do
@@ -33,6 +33,6 @@ do
     fi
 done < <(echo "${content}" | tail -n  +$((start_line + 2)))
 
-echo "${db}" > json_dbs/gpu_product_db.json
+echo "${db}" > json_dbs/nvidia_gpu_product_db.json
 
 echo "update nvidia driver version ${DRIVER_VERSION} success"

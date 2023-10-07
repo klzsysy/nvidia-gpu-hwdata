@@ -12,6 +12,6 @@ version:
 - 515.76
 - 535.113.01
 
-database: `json_dbs/gpu_product_db.json`
+database: `json_dbs/nvidia_gpu_product_db.json`
 
 update database: `sync_db.sh` 

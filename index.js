@@ -14,8 +14,8 @@ async function doAll() {
   );
   const merged = Object.assign({}, ...jsons);
   const mergedContent = JSON.stringify(merged, Object.keys(merged).sort(), 2);
-  writeFile("json_dbs/gpu_product_db.json", mergedContent, () => {
-    console.log("full gpu products save to: json_dbs/gpu_product_db.json");
+  writeFile("json_dbs/nvidia_gpu_product_db.json", mergedContent, () => {
+    console.log("full gpu products save to: json_dbs/nvidia_gpu_product_db.json");
   });
 }
 
