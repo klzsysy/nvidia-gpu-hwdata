@@ -3,7 +3,7 @@
 
 set -eo pipefail
 
-: ${DRIVER_VERSION:=535.113.01}
+: ${DRIVER_VERSION:=main}
 
 src_url=https://raw.githubusercontent.com/NVIDIA/open-gpu-kernel-modules/${DRIVER_VERSION}/README.md
 content=$(curl -sSL "${src_url}")
